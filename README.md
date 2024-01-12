@@ -28,4 +28,4 @@ ___
 - You must create a developer test account and link to it in your README.md file. Submissions that do not meet this requirement will not be considered.
 
 ## Link
-- https://app-eu1.hubspot.com/contacts/143941644/objects/0-1/views/all/list
+- https://app-eu1.hubspot.com/contacts/143941644/objects/2-121691640/views/all/list
