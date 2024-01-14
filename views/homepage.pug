@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        title=title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1(class="text-center") Custom Object Table
+        a(href="/update-cob" style="text-align: center; display: block;") Add to this table
+        .form-wrapper
+            table(style="width: 100%; border-collapse: collapse; text-align: left;")
+                thead
+                    tr
+                        th(style="padding: 10px; border: 1px solid #ddd;") Name
+                        th(style="padding: 10px; border: 1px solid #ddd;") Release Date
+                        th(style="padding: 10px; border: 1px solid #ddd;") Publisher
+                tbody
+                    each game in games
+                        tr
+                            td(style="padding: 10px; border: 1px solid #ddd;")= game.properties.name
+                            td(style="padding: 10px; border: 1px solid #ddd;")= game.properties.release_date
+                            td(style="padding: 10px; border: 1px solid #ddd;")= game.properties.publisher
