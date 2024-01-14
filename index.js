@@ -21,7 +21,7 @@ app.get('/', async (req, res) => {
     try {
         const response = await axios.get(gamesEndpoint, { headers });
         const games = response.data.results || [];
-        console.log(games);
+        //console.log('games',games);
         res.render('homepage', { title: 'Homepage', games });
     } catch (error) {
         console.error(error);
@@ -55,7 +55,7 @@ app.post('/update-cob', async (req, res) => {
         }
     };
 
-    console.log('properties', update);
+    //console.log('properties', update);
     const updateGames = 'https://api.hubspot.com/crm/v3/objects/games';
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
