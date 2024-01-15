@@ -70,3 +70,5 @@ app.post('/update-cob', async (req, res) => {
         res.status(500).send('Error.');
     }
 });
+
+app.listen(3000, () => console.log('Listening on http://localhost:3000'));
